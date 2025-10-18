@@ -1,0 +1,16 @@
+.hero-card {
+
+
+  @include mobile {
+    width: 100%;
+  }
+
+
+  &__image {
+    width: fluid(1500, 400);
+    height: fluid(400, 300);
+    border-radius: 4%;
+    transition: all 0.3s ease;
+
+  }
+}

@@ -1,0 +1,68 @@
+.button {
+  @include flex-center(true);
+
+  column-gap: 4px;
+  padding: fluid-to-laptop(12, 10) fluid-to-laptop(20, 16);
+  font-weight: 500;
+  color: var(--color-black-07);
+  background-color: var(--color-black-07);
+  border: none;
+  border-radius: var(--border-radius);
+  user-select: none;
+  cursor: pointer;
+
+  @include mobile {
+    border-radius: var(--border-radius-l);
+  }
+
+  @include hover {
+
+    color: var(--color-black-07);
+    background-color: var(--color-black-04);
+  }
+
+  &:active {
+    scale: 1.05;
+  }
+
+  &:disabled {
+    color: var(--color-black-04);
+    background-color: var(--color-black);
+  }
+
+  &:has(.button__icon:only-child) {
+    padding: 0;
+  }
+
+  &--transparent, &--white {
+    background-color: transparent;
+
+    &:has(.button__icon:only-child) {
+      @include square(44px);
+
+      .button__icon {
+        --iconSize: #{fluid-to-laptop(22,20)};
+      }
+    }
+  }
+
+  &--white {
+    background-color: var(--color-black-04);
+    padding: fluid-to-laptop(10, 5);
+
+    &:has(.button__icon:only-child) {
+      @include square(#{fluid(50,22)});
+
+    }
+
+    border-radius: 50%;
+
+
+    @include hover {
+
+      scale: 1.05;
+      background-color: var(--color-gray-accent);
+    }
+
+  }
+}

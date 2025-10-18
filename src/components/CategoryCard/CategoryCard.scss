@@ -1,0 +1,95 @@
+.category-card {
+  width: 100%;
+  height: fluid(300, 240);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-gray-accent);
+  border-radius: 10%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+
+  @include hover {
+    transform: scale(1.06);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+
+    filter: brightness(1.1);
+  }
+
+  &__header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: fluid(20, 15) fluid(20, 15);
+
+  }
+
+  &__title {
+    font-size: 20px;
+    border-radius: 20%;
+    padding: 5px;
+    color: var(--color-white);
+    background-color: var(--color-black-04);
+    text-wrap: nowrap;
+    cursor: default;
+  }
+
+  &__button {
+    padding-inline: 0px;
+    padding-block: 5px;
+    color: var(--color-white);
+    background-color: transparent;
+
+    @include hover {
+      background-color: transparent;
+      transform: scale(1.05);
+    }
+
+    .button__label {
+      font-size: 16px;
+      font-weight: 400;
+      text-align: end;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .button__icon {
+      --iconSize: #{fluid(20,15)};
+
+    }
+
+  }
+
+  &__link {
+    display: flex;
+    align-items: start;
+  }
+
+
+  &__image {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+    @include mobile {
+      object-fit: cover;
+    }
+
+    &-link {
+      position: absolute;
+      display: block;
+      inset: 0;
+      z-index: 0;
+
+    }
+
+  }
+
+
+}
+
+
+

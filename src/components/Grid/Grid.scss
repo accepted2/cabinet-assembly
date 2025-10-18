@@ -1,0 +1,33 @@
+.grid {
+  --gridColumns: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--gridColumns), 1fr);
+  column-gap: fluid(24, 16);
+  row-gap: fluid(10, 5);
+
+
+  @for $i from 1 through 6 {
+    &--#{$i} {
+      --gridColumns: #{$i};
+
+    }
+  }
+
+
+  &--3 {
+    --gridColumns: 3;
+
+    @include tablet {
+      --gridColumns: 2;
+    }
+
+
+    @include mobile-s {
+      --gridColumns: 1;
+
+    }
+  }
+
+
+}

@@ -1,0 +1,10 @@
+.logo {
+  min-width: fluid(128, 90);
+
+  @include hover {
+
+    scale: 1.01;
+
+  }
+
+}

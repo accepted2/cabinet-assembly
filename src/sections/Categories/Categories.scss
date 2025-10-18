@@ -1,0 +1,54 @@
+.categories {
+
+
+  &__grid {
+
+    .grid__item:first-child {
+      grid-row: span 2;
+
+      .category-card {
+        height: 100%;
+      }
+    }
+
+    @include mobile {
+      .grid__item:first-child {
+        grid-row: auto;
+
+        .category-card {
+          height: fluid(300, 240);
+        }
+      }
+
+      .grid__item:last-child {
+        grid-column: span 2;
+
+        .category-card {
+          height: fluid(300, 240);
+
+          &__image {
+            width: 100%;
+            height: fluid(400, 350);
+          }
+        }
+
+        @include mobile-s {
+
+          grid-column: auto;
+          .category-card {
+            height: fluid(300, 240);
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
+
+
+
+
+
+

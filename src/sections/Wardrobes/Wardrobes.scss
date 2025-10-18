@@ -1,0 +1,20 @@
+.wardrobes {
+
+  &__grid {
+    overflow-x: hidden;
+    gap: fluid(20, 15);
+
+    @include tablet {
+      --gridColumns: 3;
+    }
+
+    @include mobile {
+      --gridColumns: 2;
+    }
+
+    @include mobile-s {
+      --gridColumns: 1;
+    }
+  }
+
+}

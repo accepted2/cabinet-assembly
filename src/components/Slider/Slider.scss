@@ -1,0 +1,22 @@
+.slider {
+  position: relative;
+
+  &-item {
+    cursor: pointer;
+  }
+
+
+  &__swiper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &-navigation {
+    position: absolute;
+    width: 100%;
+  }
+
+}

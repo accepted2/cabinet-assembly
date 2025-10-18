@@ -1,0 +1,53 @@
+.benefits-card {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  &__images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+
+    @include laptop-above {
+      padding-inline: 20px;
+      height: fluid(400, 350);
+      flex-direction: row;
+
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+  }
+
+  &__image {
+    width: 100%;
+
+
+    @include tablet-above {
+      height: fluid-to-laptop(400, 350);
+    }
+
+    @include tablet {
+      height: fluid(320, 215);
+    }
+
+    @include mobile-above {
+      width: 50%;
+    }
+
+
+    @include mobile-s {
+      height: fluid(300, 270);
+
+    }
+
+  }
+
+}

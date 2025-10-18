@@ -1,0 +1,14 @@
+.soc1als {
+  padding-block: fluid-to-laptop(16, 8);
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: fluid-to-laptop(31, 25);
+  }
+
+  &__link {
+    background-color: var(--color-white);
+  }
+}

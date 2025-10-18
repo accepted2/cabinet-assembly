@@ -1,0 +1,22 @@
+.benefits {
+
+
+  &__grid {
+    --gridColumns: 1;
+    row-gap: fluid(20, 10);
+    @include mobile {
+      --gridColumns: 2;
+
+    }
+
+    @include mobile-s {
+      --gridColumns: 1;
+
+
+    }
+
+
+  }
+
+
+}

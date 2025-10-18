@@ -1,0 +1,19 @@
+.slider-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  &__arrow-button {
+    z-index: 1;
+  }
+
+  &--round {
+    padding: fluid-to-laptop(10, 5);
+
+
+    border-radius: 50%;
+  }
+
+
+}

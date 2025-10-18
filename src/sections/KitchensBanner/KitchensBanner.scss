@@ -1,0 +1,40 @@
+.kitchens-banner {
+  &__slider-navigation {
+    @include mobile {
+      @include hide;
+    }
+  }
+
+  .slider-item {
+   
+    @include mobile {
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+
+  .slider-list {
+    align-items: center;
+    @include mobile {
+
+    }
+  }
+
+  .banner-card {
+
+    @include mobile {
+      width: 300px;
+      height: 230px;
+
+    }
+
+    &__image {
+      @include mobile-above {
+
+      }
+
+    }
+  }
+
+}
