@@ -1,3 +1,6 @@
 .hallways {
+  &__grid {
+    @include adaptive-grid
+  }
 
 }

@@ -1,8 +1,7 @@
 import Swiper from "swiper";
 import getParams from "@/utils/getParams";
 import {Autoplay, EffectCoverflow, EffectFlip, Navigation, Pagination} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
+
 
 const rootSelector = '[data-js-slider]'
 

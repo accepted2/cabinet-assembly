@@ -1,29 +1,18 @@
 .kitchens {
 
-  .grid {
-
-    @include tablet {
-      --gridColumns: 3;
-    }
-
-    @include mobile {
-      --gridColumns: 2;
-    }
-
-    @include mobile-s {
-      --gridColumns: 1;
-    }
+  &__grid {
+    @include adaptive-grid
   }
 
   .product-card {
-    &__image-wrapper {
 
-    }
 
     &__image {
-      @include mobile-above {
+      @include mobile-s-above {
         height: 250px;
-        width: 300px;
+        min-height: 250px;
+        width: 350px;
+
       }
 
     }

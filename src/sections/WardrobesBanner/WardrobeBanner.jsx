@@ -52,6 +52,7 @@ const WardrobeBanner = (props) => {
     centeredSlides: true,
     slidesPerView: 2,
     spaceBetween: 40,
+  
     effect: 'coverflow',
 
     coverflowEffect: {

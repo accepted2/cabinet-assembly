@@ -19,7 +19,7 @@
     height: auto;
     width: 100%;
     background-color: var(--color-biege);
-    border-radius: 5%;
+   
     align-items: center;
 
     @include laptop {
@@ -51,7 +51,6 @@
     width: 100%;;
     height: auto;
     background-color: var(--color-gray-accent);
-    border-radius: 15%;
 
 
     @include laptop-above {

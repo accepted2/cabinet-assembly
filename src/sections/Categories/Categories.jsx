@@ -26,7 +26,7 @@ const Categories = (props) => {
     },
     {
       title: 'Кухни',
-      href: '/Kitchens',
+      href: '/kitchens',
       imgSrc: './src/assets/images/categories/categories_kitchen.jpg',
     },
     {

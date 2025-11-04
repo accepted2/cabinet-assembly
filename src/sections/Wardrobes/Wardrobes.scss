@@ -1,19 +1,17 @@
 .wardrobes {
 
   &__grid {
-    overflow-x: hidden;
-    gap: fluid(20, 15);
+    @include adaptive-grid
+  }
 
-    @include tablet {
-      --gridColumns: 3;
-    }
+  .product-card {
 
-    @include mobile {
-      --gridColumns: 2;
-    }
+    &__image {
+      @include mobile-s-above {
+        height: auto;
 
-    @include mobile-s {
-      --gridColumns: 1;
+
+      }
     }
   }
 

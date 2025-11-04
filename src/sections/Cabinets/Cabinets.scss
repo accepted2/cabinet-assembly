@@ -1,3 +1,18 @@
-.hallways {
+.cabinets {
+
+  .cabinets__grid {
+    @include adaptive-grid;
+  }
+
+  &.product-card {
+
+    &__image {
+      @include mobile-s-above {
+        height: auto;
+
+
+      }
+    }
+  }
 
 }

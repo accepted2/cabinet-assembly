@@ -1,4 +1,5 @@
 import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import './Slider.scss'
 import SliderNavigation from "@/components/Slider/components/SliderNavigation";
 

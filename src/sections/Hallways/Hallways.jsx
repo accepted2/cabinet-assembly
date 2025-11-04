@@ -8,7 +8,6 @@ const Hallways = (props) => {
     className,
   } = props
 
-
   const hallwaysItems = [
     {
       title: 'Кухня1',
@@ -85,6 +84,7 @@ const Hallways = (props) => {
       >
         {hallwaysItems.map((item, index) => (
           <ProductCard
+            isLiked
             {...item}
             key={index}
 

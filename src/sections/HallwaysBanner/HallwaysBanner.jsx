@@ -1,8 +1,9 @@
 import './HallwaysBanner.scss'
 import Section from "@/layouts/Section";
 import Slider from "@/components/Slider";
-import SliderNavigation from "@/components/Slider/components/SliderNavigation";
 import BannerCard from "@/components/BannerCard";
+import SliderNavigation from "@/components/Slider/components/SliderNavigation";
+
 
 const HallwaysBanner = (props) => {
   const {

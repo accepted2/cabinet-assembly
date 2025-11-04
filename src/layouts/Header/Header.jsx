@@ -54,7 +54,8 @@ const Header = (props) => {
 
             <Button
               className="header__button"
-              label="Account"
+              label="Favorites"
+              href="/favorites"
               isLabelHidden
               mode="transparent"
               iconName="account"

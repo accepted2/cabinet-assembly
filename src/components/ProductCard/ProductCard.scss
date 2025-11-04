@@ -1,8 +1,15 @@
 .product-card {
+
+  position: relative;
   display: grid;
   row-gap: 10px;
   background-color: var(--color-gray-03);
   cursor: pointer;
+  transition-duration: var(--transition-duration-longer);
+
+  &__link {
+    display: grid;
+  }
 
   @include mobile-above {
     padding: fluid(15, 10);
@@ -15,7 +22,7 @@
   &:hover {
 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transition-duration: var(--transition-duration-longer);
+
     filter: brightness(1.1);
     border-radius: 5%;
   }
@@ -26,7 +33,7 @@
   }
 
   &__image-wrapper {
-
+    padding: 5px;
     justify-self: center;
     user-select: none;
   }
@@ -35,19 +42,55 @@
     width: 100%;
     border-radius: 5%;
 
-    @include mobile-above {
-      height: 250px;
-      width: 300px;
+    @include tablet-above {
+      height: auto;
+      width: 100%;
 
     }
 
+
     @include mobile-s {
       width: 100%;
+    }
+
+    @include mobile-s-above {
+      height: 250px;
+      min-height: 250px;
+      width: 350px;
+
     }
   }
 
   &__body {
     padding-block: fluid(15, 10);
+  }
+
+  &__like-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    column-gap: 0;
+
+    color: var(--color-gray-accent);
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+
+    @include hover {
+      color: var(--color-red);
+      background-color: var(--color-gray-accent);
+    }
+
+    &.is-liked {
+      .button__icon {
+        color: var(--color-red);
+      }
+
+    }
+
+
   }
 
 }
