@@ -44,13 +44,7 @@ const Header = (props) => {
             </ul>
           </nav>
           <div className="header__actions">
-            <Button
-              className="header__button"
-              label="Search"
-              isLabelHidden
-              mode="transparent"
-              iconName="search"
-            />
+
 
             <Button
               className="header__button"
@@ -58,7 +52,8 @@ const Header = (props) => {
               href="/favorites"
               isLabelHidden
               mode="transparent"
-              iconName="account"
+              iconName="heart1"
+              hasFillIcon
             />
           </div>
         </dialog>

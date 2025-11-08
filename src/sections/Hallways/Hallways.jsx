@@ -16,7 +16,9 @@ const Hallways = (props) => {
     },
     {
       title: 'Кухня1',
-      description: ' Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Commodi corporis culpa',
+      description: ' Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Commodi corporis culpa  ' +
+        'Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Commodi corporis culpa'
+      ,
       imgSrc: './src/assets/images/Kitchens/kitchen2.jpg',
     },
     {

@@ -12,7 +12,7 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 
   @mixin scrolling-header-styles {
-    padding-block: 10px;
+    padding-block: 18px;
     background-color: inherit;
     border-color: var(--color-black-15);
   }
@@ -142,5 +142,16 @@
   &__burger-button {
     position: relative;
   }
+
+  .button {
+    background-color: var(--color-white);
+
+
+    &__icon {
+      color: var(--color-red);
+
+    }
+  }
+
 
 }

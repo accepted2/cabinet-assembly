@@ -7,6 +7,7 @@
   cursor: pointer;
   transition-duration: var(--transition-duration-longer);
 
+
   &__link {
     display: grid;
   }
@@ -47,8 +48,6 @@
       width: 100%;
 
     }
-
-
     @include mobile-s {
       width: 100%;
     }
@@ -57,12 +56,13 @@
       height: 250px;
       min-height: 250px;
       width: 350px;
-
     }
   }
 
   &__body {
     padding-block: fluid(15, 10);
+
+
   }
 
   &__like-button {
@@ -72,7 +72,6 @@
     width: 45px;
     height: 45px;
     column-gap: 0;
-
     color: var(--color-gray-accent);
     background-color: var(--color-white);
     border: none;
@@ -87,10 +86,6 @@
       .button__icon {
         color: var(--color-red);
       }
-
     }
-
-
   }
-
 }
