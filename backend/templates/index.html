@@ -1,0 +1,344 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Assembly | Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+    <script src="/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/bundle.css">
+  </head>
+  <body>
+    <header class="header" data-js-overlay-menu="">
+      <div class="header__inner container">
+        <a class="header__logo logo" href="/" title="Home" aria-label="Home">
+          <img class="logo__image" src="{% static 'logo.svg' %}" alt="" width="128" height="34" loading="eager">
+        </a>
+        <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link is-active" href="/">Главная</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="/#categories">Каталог</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#benefits">О нас</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <a class="header__button button button--transparent" title="Favorites" arial-label="Favorites" href="/favorites"><span class="button__icon icon">
+                <svg fill="currentColor" stroke="none">
+                  <use href="/assets/images/icons.svg#heart1"></use>
+                </svg>
+              </span></a>
+          </div>
+        </dialog>
+        <button class="header__burger-button visible-mobile burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button="">
+          <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+            <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+            <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+            <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <section class="hero section container" aria-labelledby="new-arrivals">
+        <div class="section__body">
+          <div class="slider" data-js-slider="{&quot;sliderParams&quot;:{&quot;slidesPerView&quot;:3,&quot;slidesPerGroup&quot;:3,&quot;spaceBetween&quot;:5,&quot;loop&quot;:true,&quot;slideShadows&quot;:true,&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;slidesPerView&quot;:1,&quot;slidesPerGroup&quot;:1},&quot;650&quot;:{&quot;slidesPerView&quot;:2,&quot;slidesPerGroup&quot;:2},&quot;992&quot;:{&quot;slidesPerView&quot;:3,&quot;slidesPerGroup&quot;:3}}},&quot;navigationTargetElementId&quot;:&quot;hero-slider-navigation&quot;}">
+            <div class="slider__swiper swiper" data-js-slider-swiper="">
+              <ul class="slider-list swiper-wrapper">
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/hero_kitchen3-320x240.jpg 320w, /assets/images/hero_kitchen3-400x300.jpg 400w, /assets/images/hero_kitchen3-640x480.jpg 640w, /assets/images/hero_kitchen3-800x600.jpg 800w, /assets/images/hero_kitchen3-1024x768.jpg 1024w, /assets/images/hero_kitchen3-1280x960.jpg 1280w, /assets/images/hero_kitchen3-1440x1080.jpg 1440w, /assets/images/hero_kitchen3-1920x1440.jpg 1920w, /assets/images/hero_kitchen3-2560x1920.jpg 2560w" src="/assets/images/hero_kitchen3-2560x1920.jpg" sizes="(min-width: 2560px) 2560px, 100vw" width="2560" height="1920" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/hero_kitchen-320x240.jpg 320w, /assets/images/hero_kitchen-400x300.jpg 400w, /assets/images/hero_kitchen-640x480.jpg 640w, /assets/images/hero_kitchen-800x600.jpg 800w, /assets/images/hero_kitchen-1024x768.jpg 1024w, /assets/images/hero_kitchen-1280x960.jpg 1280w, /assets/images/hero_kitchen-1440x1080.jpg 1440w, /assets/images/hero_kitchen-1920x1440.jpg 1920w, /assets/images/hero_kitchen-2560x1920.jpg 2560w" src="/assets/images/hero_kitchen-2560x1920.jpg" sizes="(min-width: 2560px) 2560px, 100vw" width="2560" height="1920" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/hero_kitchen6-320x262.jpg 320w, /assets/images/hero_kitchen6-400x328.jpg 400w, /assets/images/hero_kitchen6-640x525.jpg 640w, /assets/images/hero_kitchen6-800x656.jpg 800w, /assets/images/hero_kitchen6-1024x840.jpg 1024w, /assets/images/hero_kitchen6-1280x1050.jpg 1280w, /assets/images/hero_kitchen6-1440x1181.jpg 1440w, /assets/images/hero_kitchen6-1920x1574.jpg 1920w, /assets/images/hero_kitchen6-2560x2099.jpg 2560w, /assets/images/hero_kitchen6-2712x2229.jpg 2712w" src="/assets/images/hero_kitchen6-2712x2229.jpg" sizes="(min-width: 2712px) 2712px, 100vw" width="2712" height="2229" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/hero_kitchen2-320x333.jpg 320w, /assets/images/hero_kitchen2-400x416.jpg 400w, /assets/images/hero_kitchen2-640x666.jpg 640w, /assets/images/hero_kitchen2-800x832.jpg 800w, /assets/images/hero_kitchen2-1024x1065.jpg 1024w, /assets/images/hero_kitchen2-1280x1331.jpg 1280w, /assets/images/hero_kitchen2-1440x1498.jpg 1440w, /assets/images/hero_kitchen2-1879x1949.jpg 1879w" src="/assets/images/hero_kitchen2-1879x1949.jpg" sizes="(min-width: 1879px) 1879px, 100vw" width="1879" height="1949" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/wardrobe1-320x333.jpg 320w, /assets/images/wardrobe1-400x416.jpg 400w, /assets/images/wardrobe1-640x666.jpg 640w, /assets/images/wardrobe1-800x832.jpg 800w, /assets/images/wardrobe1-1024x1065.jpg 1024w, /assets/images/wardrobe1-1280x1331.jpg 1280w, /assets/images/wardrobe1-1440x1498.jpg 1440w, /assets/images/wardrobe1-1785x1852.jpg 1785w" src="/assets/images/wardrobe1-1785x1852.jpg" sizes="(min-width: 1785px) 1785px, 100vw" width="1785" height="1852" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/wardrobe2-320x333.jpg 320w, /assets/images/wardrobe2-400x416.jpg 400w, /assets/images/wardrobe2-640x666.jpg 640w, /assets/images/wardrobe2-800x832.jpg 800w, /assets/images/wardrobe2-1024x1065.jpg 1024w, /assets/images/wardrobe2-1280x1331.jpg 1280w, /assets/images/wardrobe2-1440x1498.jpg 1440w, /assets/images/wardrobe2-1879x1949.jpg 1879w" src="/assets/images/wardrobe2-1879x1949.jpg" sizes="(min-width: 1879px) 1879px, 100vw" width="1879" height="1949" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/bathroom1-320x426.jpg 320w, /assets/images/bathroom1-400x532.jpg 400w, /assets/images/bathroom1-640x851.jpg 640w, /assets/images/bathroom1-800x1064.jpg 800w, /assets/images/bathroom1-1024x1362.jpg 1024w, /assets/images/bathroom1-1280x1702.jpg 1280w, /assets/images/bathroom1-1440x1915.jpg 1440w, /assets/images/bathroom1-1920x2560.jpg 1920w" src="/assets/images/bathroom1-1920x2560.jpg" sizes="(min-width: 1920px) 1920px, 100vw" width="1920" height="2560" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/wardrobe4-320x426.jpg 320w, /assets/images/wardrobe4-400x532.jpg 400w, /assets/images/wardrobe4-640x851.jpg 640w, /assets/images/wardrobe4-800x1064.jpg 800w, /assets/images/wardrobe4-1024x1362.jpg 1024w, /assets/images/wardrobe4-1280x1702.jpg 1280w, /assets/images/wardrobe4-1440x1915.jpg 1440w, /assets/images/wardrobe4-1920x2560.jpg 1920w" src="/assets/images/wardrobe4-1920x2560.jpg" sizes="(min-width: 1920px) 1920px, 100vw" width="1920" height="2560" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/table3-320x426.jpg 320w, /assets/images/table3-400x532.jpg 400w, /assets/images/table3-640x851.jpg 640w, /assets/images/table3-800x1064.jpg 800w, /assets/images/table3-1024x1362.jpg 1024w, /assets/images/table3-1280x1702.jpg 1280w, /assets/images/table3-1440x1915.jpg 1440w, /assets/images/table3-1920x2560.jpg 1920w" src="/assets/images/table3-1920x2560.jpg" sizes="(min-width: 1920px) 1920px, 100vw" width="1920" height="2560" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/table2-320x240.jpg 320w, /assets/images/table2-400x300.jpg 400w, /assets/images/table2-640x480.jpg 640w, /assets/images/table2-800x600.jpg 800w, /assets/images/table2-1024x768.jpg 1024w, /assets/images/table2-1280x960.jpg 1280w, /assets/images/table2-1440x1080.jpg 1440w, /assets/images/table2-1920x1440.jpg 1920w, /assets/images/table2-2560x1920.jpg 2560w" src="/assets/images/table2-2560x1920.jpg" sizes="(min-width: 2560px) 2560px, 100vw" width="2560" height="1920" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/table1-320x240.jpg 320w, /assets/images/table1-400x300.jpg 400w, /assets/images/table1-640x480.jpg 640w, /assets/images/table1-800x600.jpg 800w, /assets/images/table1-1024x768.jpg 1024w, /assets/images/table1-1280x960.jpg 1280w, /assets/images/table1-1440x1080.jpg 1440w, /assets/images/table1-1920x1440.jpg 1920w, /assets/images/table1-2560x1920.jpg 2560w" src="/assets/images/table1-2560x1920.jpg" sizes="(min-width: 2560px) 2560px, 100vw" width="2560" height="1920" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <a class="hero-card" href="/">
+                    <img srcset="/assets/images/wardrobe3-320x240.jpg 320w, /assets/images/wardrobe3-400x300.jpg 400w, /assets/images/wardrobe3-640x480.jpg 640w, /assets/images/wardrobe3-800x600.jpg 800w, /assets/images/wardrobe3-1024x768.jpg 1024w, /assets/images/wardrobe3-1280x960.jpg 1280w, /assets/images/wardrobe3-1440x1080.jpg 1440w, /assets/images/wardrobe3-1920x1440.jpg 1920w, /assets/images/wardrobe3-2560x1920.jpg 2560w" src="/assets/images/wardrobe3-2560x1920.jpg" sizes="(min-width: 2560px) 2560px, 100vw" width="2560" height="1920" alt decoding="async" loading="lazy" class="hero-card__image">
+                  </a>
+                </li>
+              </ul>
+              <div class="hero__slider-navigation slider-navigation slider-navigation--round" id="hero-slider-navigation" data-js-slider-navigation="">
+                <button class="slider-navigation__arrow-button slider-navigation__arrow-button--previous button button--white" title="Previous slide" arial-label="Previous slide" type="button" data-js-slider-previous-button=""><span class="button__icon icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#arrow-left"></use>
+                    </svg>
+                  </span></button>
+                <div class="slider-navigation__pagination" data-js-slider-pagination=""></div>
+                <button class="slider-navigation__arrow-button slider-navigation__arrow-button-next button button--white" title="Next slide" arial-label="Next slide" type="button" data-js-slider-next-button=""><span class="button__icon icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#arrow-right"></use>
+                    </svg>
+                  </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categories section container" aria-labelledby="kinds-of-cabinets" id="categories">
+        <header class="section__header">
+          <div class="section__info">
+            <h3 class="section__title h4" id="kinds-of-cabinets">Виды мебели</h3>
+            <div class="section__description">
+              <p>Мебель, которая подстраивается под ваш стиль</p>
+            </div>
+          </div>
+        </header>
+        <div class="section__body">
+          <ul class="categories__grid grid grid--3">
+            <li class="grid__item">
+              <div class="category-card">
+                <a class="category-card__image-link" href="/wardrobes">
+                  <img srcset="/assets/images/categories_wardrobes-320x426.jpg 320w, /assets/images/categories_wardrobes-400x532.jpg 400w, /assets/images/categories_wardrobes-640x851.jpg 640w, /assets/images/categories_wardrobes-800x1064.jpg 800w, /assets/images/categories_wardrobes-1024x1362.jpg 1024w, /assets/images/categories_wardrobes-1280x1702.jpg 1280w, /assets/images/categories_wardrobes-1440x1915.jpg 1440w, /assets/images/categories_wardrobes-1920x2560.jpg 1920w" src="/assets/images/categories_wardrobes-1920x2560.jpg" sizes="(min-width: 1920px) 1920px, 100vw" width="1920" height="2560" alt decoding="async" loading="lazy" class="category-card__image">
+                </a>
+                <div class="category-card__header">
+                  <h3 class="category-card__title h4">Шкафы</h3>
+                  <div class="category-card__link">
+                    <a class="category-card__button button" href="/wardrobes"><span class="button__label">Смотреть больше</span><span class="button__icon icon">
+                        <svg fill="none" stroke="currentColor">
+                          <use href="/assets/images/icons.svg#arrow-right"></use>
+                        </svg>
+                      </span></a>
+                  </div>
+                </div>
+                <div class="category-card__body"></div>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="category-card">
+                <a class="category-card__image-link" href="/hallways">
+                  <img srcset="/assets/images/categories_hallway-320x426.jpg 320w, /assets/images/categories_hallway-400x532.jpg 400w, /assets/images/categories_hallway-640x851.jpg 640w, /assets/images/categories_hallway-800x1064.jpg 800w, /assets/images/categories_hallway-1024x1362.jpg 1024w, /assets/images/categories_hallway-1280x1702.jpg 1280w, /assets/images/categories_hallway-1440x1915.jpg 1440w, /assets/images/categories_hallway-1920x2560.jpg 1920w" src="/assets/images/categories_hallway-1920x2560.jpg" sizes="(min-width: 1920px) 1920px, 100vw" width="1920" height="2560" alt decoding="async" loading="lazy" class="category-card__image">
+                </a>
+                <div class="category-card__header">
+                  <h3 class="category-card__title h4">Прихожки</h3>
+                  <div class="category-card__link">
+                    <a class="category-card__button button" href="/hallway"><span class="button__label">Смотреть больше</span><span class="button__icon icon">
+                        <svg fill="none" stroke="currentColor">
+                          <use href="/assets/images/icons.svg#arrow-right"></use>
+                        </svg>
+                      </span></a>
+                  </div>
+                </div>
+                <div class="category-card__body"></div>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="category-card">
+                <a class="category-card__image-link" href="/tables">
+                  <img srcset="/assets/images/categories_table-320x240.jpg 320w, /assets/images/categories_table-400x300.jpg 400w, /assets/images/categories_table-640x480.jpg 640w, /assets/images/categories_table-800x600.jpg 800w, /assets/images/categories_table-1024x768.jpg 1024w, /assets/images/categories_table-1280x960.jpg 1280w, /assets/images/categories_table-1440x1080.jpg 1440w, /assets/images/categories_table-1920x1440.jpg 1920w, /assets/images/categories_table-2560x1920.jpg 2560w, /assets/images/categories_table-2880x2160.jpg 2880w, /assets/images/categories_table-3840x2880.jpg 3840w" src="/assets/images/categories_table-3840x2880.jpg" sizes="(min-width: 4160px) 4160px, 100vw" width="4160" height="3120" alt decoding="async" loading="lazy" class="category-card__image">
+                </a>
+                <div class="category-card__header">
+                  <h3 class="category-card__title h4">Столы</h3>
+                  <div class="category-card__link">
+                    <a class="category-card__button button" href="/tables"><span class="button__label">Смотреть больше</span><span class="button__icon icon">
+                        <svg fill="none" stroke="currentColor">
+                          <use href="/assets/images/icons.svg#arrow-right"></use>
+                        </svg>
+                      </span></a>
+                  </div>
+                </div>
+                <div class="category-card__body"></div>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="category-card">
+                <a class="category-card__image-link" href="/kitchens">
+                  <img srcset="/assets/images/categories_kitchen-320x470.jpg 320w, /assets/images/categories_kitchen-400x588.jpg 400w, /assets/images/categories_kitchen-640x941.jpg 640w, /assets/images/categories_kitchen-800x1176.jpg 800w, /assets/images/categories_kitchen-1024x1505.jpg 1024w, /assets/images/categories_kitchen-1280x1882.jpg 1280w, /assets/images/categories_kitchen-1440x2117.jpg 1440w, /assets/images/categories_kitchen-1742x2560.jpg 1742w" src="/assets/images/categories_kitchen-1742x2560.jpg" sizes="(min-width: 1742px) 1742px, 100vw" width="1742" height="2560" alt decoding="async" loading="lazy" class="category-card__image">
+                </a>
+                <div class="category-card__header">
+                  <h3 class="category-card__title h4">Кухни</h3>
+                  <div class="category-card__link">
+                    <a class="category-card__button button" href="/kitchens"><span class="button__label">Смотреть больше</span><span class="button__icon icon">
+                        <svg fill="none" stroke="currentColor">
+                          <use href="/assets/images/icons.svg#arrow-right"></use>
+                        </svg>
+                      </span></a>
+                  </div>
+                </div>
+                <div class="category-card__body"></div>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="category-card">
+                <a class="category-card__image-link" href="/cabinets">
+                  <img srcset="/assets/images/categories_cabinet-320x240.jpg 320w, /assets/images/categories_cabinet-400x300.jpg 400w, /assets/images/categories_cabinet-640x480.jpg 640w, /assets/images/categories_cabinet-800x600.jpg 800w, /assets/images/categories_cabinet-1024x768.jpg 1024w, /assets/images/categories_cabinet-1280x960.jpg 1280w, /assets/images/categories_cabinet-1440x1080.jpg 1440w, /assets/images/categories_cabinet-1920x1440.jpg 1920w, /assets/images/categories_cabinet-2560x1920.jpg 2560w" src="/assets/images/categories_cabinet-2560x1920.jpg" sizes="(min-width: 2560px) 2560px, 100vw" width="2560" height="1920" alt decoding="async" loading="lazy" class="category-card__image">
+                </a>
+                <div class="category-card__header">
+                  <h3 class="category-card__title h4">Тумбы</h3>
+                  <div class="category-card__link">
+                    <a class="category-card__button button" href="/cabinets"><span class="button__label">Смотреть больше</span><span class="button__icon icon">
+                        <svg fill="none" stroke="currentColor">
+                          <use href="/assets/images/icons.svg#arrow-right"></use>
+                        </svg>
+                      </span></a>
+                  </div>
+                </div>
+                <div class="category-card__body"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="benefits section container" aria-labelledby="benefits" id="benefits">
+        <header class="section__header">
+          <div class="section__info">
+            <h3 class="section__title h4" id="benefits">20 лет опыта и доверия</h3>
+            <div class="section__description">
+              <p>Мы создаём кухни, которые служат десятилетиями: от точных замеров и 3D-проекта до профессиональной сборки.
+                Свобода дизайна,3D-проект, честные цены и заботу на каждом этапе.</p>
+            </div>
+          </div>
+        </header>
+        <div class="section__body">
+          <ul class="benefits__grid grid">
+            <li class="grid__item">
+              <div class="benefits-card">
+                <div class="benefits-card__images">
+                  <img srcset="/assets/images/kitchen1-320x221.jpg 320w, /assets/images/kitchen1-400x276.jpg 400w, /assets/images/kitchen1-640x442.jpg 640w, /assets/images/kitchen1-800x552.jpg 800w, /assets/images/kitchen1-1024x707.jpg 1024w, /assets/images/kitchen1-1280x883.jpg 1280w, /assets/images/kitchen1-1440x994.jpg 1440w, /assets/images/kitchen1-1920x1325.jpg 1920w, /assets/images/kitchen1-2560x1766.jpg 2560w, /assets/images/kitchen1-2880x1987.jpg 2880w, /assets/images/kitchen1-3840x2650.jpg 3840w" src="/assets/images/kitchen1-3840x2650.jpg" sizes="(min-width: 3916px) 3916px, 100vw" width="3916" height="2704" alt decoding="async" loading="lazy" class="benefits-card__image">
+                  <img srcset="/assets/images/kitchen1_3d-320x256.jpg 320w, /assets/images/kitchen1_3d-400x320.jpg 400w, /assets/images/kitchen1_3d-640x512.jpg 640w, /assets/images/kitchen1_3d-800x640.jpg 800w, /assets/images/kitchen1_3d-1024x819.jpg 1024w, /assets/images/kitchen1_3d-1280x1024.jpg 1280w, /assets/images/kitchen1_3d-1440x1152.jpg 1440w, /assets/images/kitchen1_3d-1920x1536.jpg 1920w, /assets/images/kitchen1_3d-2560x2048.jpg 2560w, /assets/images/kitchen1_3d-2700x2160.jpg 2700w" src="/assets/images/kitchen1_3d-2700x2160.jpg" sizes="(min-width: 2700px) 2700px, 100vw" width="2700" height="2160" alt decoding="async" loading="lazy" class="benefits-card__image">
+                </div>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="benefits-card">
+                <div class="benefits-card__images">
+                  <img srcset="/assets/images/kitchen1-320x221.jpg 320w, /assets/images/kitchen1-400x276.jpg 400w, /assets/images/kitchen1-640x442.jpg 640w, /assets/images/kitchen1-800x552.jpg 800w, /assets/images/kitchen1-1024x707.jpg 1024w, /assets/images/kitchen1-1280x883.jpg 1280w, /assets/images/kitchen1-1440x994.jpg 1440w, /assets/images/kitchen1-1920x1325.jpg 1920w, /assets/images/kitchen1-2560x1766.jpg 2560w, /assets/images/kitchen1-2880x1987.jpg 2880w, /assets/images/kitchen1-3840x2650.jpg 3840w" src="/assets/images/kitchen1-3840x2650.jpg" sizes="(min-width: 3916px) 3916px, 100vw" width="3916" height="2704" alt decoding="async" loading="lazy" class="benefits-card__image">
+                  <img srcset="/assets/images/kitchen1_3d-320x256.jpg 320w, /assets/images/kitchen1_3d-400x320.jpg 400w, /assets/images/kitchen1_3d-640x512.jpg 640w, /assets/images/kitchen1_3d-800x640.jpg 800w, /assets/images/kitchen1_3d-1024x819.jpg 1024w, /assets/images/kitchen1_3d-1280x1024.jpg 1280w, /assets/images/kitchen1_3d-1440x1152.jpg 1440w, /assets/images/kitchen1_3d-1920x1536.jpg 1920w, /assets/images/kitchen1_3d-2560x2048.jpg 2560w, /assets/images/kitchen1_3d-2700x2160.jpg 2700w" src="/assets/images/kitchen1_3d-2700x2160.jpg" sizes="(min-width: 2700px) 2700px, 100vw" width="2700" height="2160" alt decoding="async" loading="lazy" class="benefits-card__image">
+                </div>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="benefits-card">
+                <div class="benefits-card__images">
+                  <img srcset="/assets/images/kitchen1-320x221.jpg 320w, /assets/images/kitchen1-400x276.jpg 400w, /assets/images/kitchen1-640x442.jpg 640w, /assets/images/kitchen1-800x552.jpg 800w, /assets/images/kitchen1-1024x707.jpg 1024w, /assets/images/kitchen1-1280x883.jpg 1280w, /assets/images/kitchen1-1440x994.jpg 1440w, /assets/images/kitchen1-1920x1325.jpg 1920w, /assets/images/kitchen1-2560x1766.jpg 2560w, /assets/images/kitchen1-2880x1987.jpg 2880w, /assets/images/kitchen1-3840x2650.jpg 3840w" src="/assets/images/kitchen1-3840x2650.jpg" sizes="(min-width: 3916px) 3916px, 100vw" width="3916" height="2704" alt decoding="async" loading="lazy" class="benefits-card__image">
+                  <img srcset="/assets/images/kitchen1_3d-320x256.jpg 320w, /assets/images/kitchen1_3d-400x320.jpg 400w, /assets/images/kitchen1_3d-640x512.jpg 640w, /assets/images/kitchen1_3d-800x640.jpg 800w, /assets/images/kitchen1_3d-1024x819.jpg 1024w, /assets/images/kitchen1_3d-1280x1024.jpg 1280w, /assets/images/kitchen1_3d-1440x1152.jpg 1440w, /assets/images/kitchen1_3d-1920x1536.jpg 1920w, /assets/images/kitchen1_3d-2560x2048.jpg 2560w, /assets/images/kitchen1_3d-2700x2160.jpg 2700w" src="/assets/images/kitchen1_3d-2700x2160.jpg" sizes="(min-width: 2700px) 2700px, 100vw" width="2700" height="2160" alt decoding="async" loading="lazy" class="benefits-card__image">
+                </div>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="benefits-card">
+                <div class="benefits-card__images">
+                  <img srcset="/assets/images/kitchen2-320x240.jpg 320w, /assets/images/kitchen2-400x300.jpg 400w, /assets/images/kitchen2-640x480.jpg 640w, /assets/images/kitchen2-800x600.jpg 800w, /assets/images/kitchen2-1024x768.jpg 1024w, /assets/images/kitchen2-1280x960.jpg 1280w, /assets/images/kitchen2-1440x1080.jpg 1440w, /assets/images/kitchen2-1920x1440.jpg 1920w, /assets/images/kitchen2-2560x1920.jpg 2560w" src="/assets/images/kitchen2-2560x1920.jpg" sizes="(min-width: 2560px) 2560px, 100vw" width="2560" height="1920" alt decoding="async" loading="lazy" class="benefits-card__image">
+                  <img srcset="/assets/images/kitchen2_3d-320x218.jpg 320w, /assets/images/kitchen2_3d-400x272.jpg 400w, /assets/images/kitchen2_3d-640x435.jpg 640w, /assets/images/kitchen2_3d-800x544.jpg 800w, /assets/images/kitchen2_3d-1024x696.jpg 1024w, /assets/images/kitchen2_3d-1280x870.jpg 1280w, /assets/images/kitchen2_3d-1440x979.jpg 1440w, /assets/images/kitchen2_3d-1920x1306.jpg 1920w, /assets/images/kitchen2_3d-2492x1688.jpg 2492w" src="/assets/images/kitchen2_3d-2492x1688.jpg" sizes="(min-width: 2492px) 2492px, 100vw" width="2492" height="1688" alt decoding="async" loading="lazy" class="benefits-card__image">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="footer__inner container">
+        <div class="footer__menu">
+          <div class="footer__menu-info">
+            <a class="footer__logo logo" href="/" title="Home" aria-label="Home">
+              <img class="logo__image" src={% static 'logo.svg' %} alt="" width="128" height="34" loading="lazy">
+            </a>
+            <p class="footer__gifts">Gift &amp; Decoration Store</p>
+          </div>
+          <div class="footer__menu-links">
+            <a class="footer__menu-link" href="/">Главная</a>
+            <a class="footer__menu-link" href="/#categories">Каталог</a>
+            <a class="footer__menu-link" href="#benefits">О нас</a>
+            <a class="footer__menu-link" href="#contacts">Контакты</a>
+          </div>
+        </div>
+        <div class="footer__extra">
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">Copyright © <time dateTime="2025">2025</time>CabinetAssembly. All rights reserved</p>
+            <div class="footer__copyright-links">
+              <a class="footer__copyright-link" href="/">Terms of Use</a>
+              <a class="footer__copyright-link" href="/">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="footer__soc1als soc1als">
+            <ul class="soc1als__list">
+              <li class="soc1als__item">
+                <a class="soc1als__link button" title="Instagram" arial-label="Instagram" href="/" target="_blank"><span class="button__icon icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="/assets/images/icons.svg#instagram"></use>
+                    </svg>
+                  </span></a>
+              </li>
+              <li class="soc1als__item">
+                <a class="soc1als__link button" title="Facebook" arial-label="Facebook" href="/" target="_blank"><span class="button__icon icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="/assets/images/icons.svg#facebook"></use>
+                    </svg>
+                  </span></a>
+              </li>
+              <li class="soc1als__item">
+                <a class="soc1als__link button" title="Youtube" arial-label="Youtube" href="/" target="_blank"><span class="button__icon icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="/assets/images/icons.svg#youtube"></use>
+                    </svg>
+                  </span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
