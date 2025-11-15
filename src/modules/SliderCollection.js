@@ -46,7 +46,7 @@ class Slider {
         bulletActiveClass: 'is-active'
       },
       autoplay: {
-        delay: 30000000,
+        delay: 3000,
         disableOnInteraction: false,
       },
       loop: true,

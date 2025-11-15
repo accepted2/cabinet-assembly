@@ -1,4 +1,7 @@
 .favorite-products {
+  .section{
+    padding-top: 175px;
+  }
   &__grid {
     @include adaptive-grid
   }
